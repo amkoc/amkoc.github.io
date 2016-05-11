@@ -1,38 +1,474 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>questionnaire</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Question Wizard</title>
+    <!-- Bootstrap -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./prettify.css" rel="stylesheet">
+	<link href="./css.css" rel="stylesheet">
   </head>
   <body>
-    <div id="content">
-      <h1 id="title">Welcome to my Website!</h1>
-      <form id="main">
-        <ol>
-          <li class="forminput">
-            <h4>Lorem Ipsem Dolor Sit whatever</h4>
-            <p class="subtext">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-            <textarea rows="1" cols="1" name="text"></textarea>
-          </li>
-          <li class="forminput">
-            <h4>Lorem Ipsem Dolor Sit amet</h4>
-            <p class="subtext"></p>
-            <textarea rows="1" cols="1" name="text"></textarea>
-          </li>      
-          <li class="forminput">
-            <h4>Lorem Ipsem Dolor Sit amet</h4>
-            <p class="subtext"></p>
-            <textarea rows="1" cols="1" name="text"></textarea>
-          </li>
-        </ol>
-      </form>
-    </div>
-    <div id="footer">
-      <p>(footer)!</p>
-    </div>
+    <div class='container' id="wrapper">
+
+			<section id="wizard">
+			  <div class="page-header">
+	            <h1>Question Wizard</h1>
+<!-- 	            <p class="subtext">
+	            	Answer the questions below, then press 'next'.
+	            </p> -->
+	          </div>
+
+				<div id="rootwizard">
+					<div class="navbar">
+						  <div class="navbar-inner">
+						    <div class="container" id="tabsContainer">
+								<ul>
+								  	<li><a href="#tab1" data-toggle="tab">1</a></li>
+									<li><a href="#tab2" data-toggle="tab">2</a></li>
+									<li><a href="#tab3" data-toggle="tab">3</a></li>
+									<li><a href="#tab4" data-toggle="tab">4</a></li>
+									<li><a href="#tab5" data-toggle="tab">5</a></li>
+									<li><a href="#tab6" data-toggle="tab">6</a></li>
+									<li><a href="#tab7" data-toggle="tab">7</a></li>
+									<li><a href="#tab8" data-toggle="tab">8</a></li>
+									<li><a href="#tab9" data-toggle="tab">9</a></li>
+									<li><a href="#tab10" data-toggle="tab">10</a></li>
+									<li><a href="#tab11" data-toggle="tab">11</a></li>
+									<li><a href="#tab12" data-toggle="tab">12</a></li>
+									<li><a href="#tab13" data-toggle="tab">13</a></li>
+									<li><a href="#tab14" data-toggle="tab">14</a></li>
+									<li><a href="#tab15" data-toggle="tab">15</a></li>
+									<li><a href="#tab16" data-toggle="tab">16</a></li>
+									<li><a href="#tab17" data-toggle="tab">17</a></li>
+									<li><a href="#tab18" data-toggle="tab">18</a></li>
+									<li><a href="#tab19" data-toggle="tab">19</a></li>
+									<li><a href="#tab20" data-toggle="tab">20</a></li>
+									<li><a href="#tab21" data-toggle="tab">21</a></li>
+									<li><a href="#tab22" data-toggle="tab">22</a></li>
+									<li><a href="#tab23" data-toggle="tab">23</a></li>
+									<li><a href="#tab24" data-toggle="tab">24</a></li>
+									<li><a href="#tab25" data-toggle="tab">25</a></li>
+									<li><a href="#tab26" data-toggle="tab">26</a></li>
+									<li><a href="#tab27" data-toggle="tab">27</a></li>
+									<li><a href="#tab28" data-toggle="tab">28</a></li>
+									<li><a href="#tab29" data-toggle="tab">29</a></li>
+									<li><a href="#tab30" data-toggle="tab">Finish</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-content"> <!-- Add questions here, for each question add a new tab above -->
+					    <div class="tab-pane" id="tab1">
+					      	<div class="num">1/30</div>
+					    	<p class="questionText">
+					    		What breeds are you interested in and why?
+					    	</p>
+					      	<p class="subtext">
+					      		If not specific breeds, then what types of dogs are you interested in? Some examples of types include herding dogs, retrievers, small terriers, and more.
+
+					      	</p>
+						    <textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab2">
+					    	<div class="num">2/30</div>
+					    	<p class="questionText">
+					    		What role is your dog expected to fill and how do you envision your dog fulfilling that role?
+					    	</p>
+					      	<p class="subtext">
+					      		Here's a brief list to get you started:<br/> Companion, hobby (tricks and casual sports participation), working dog, serious dog sports prospect, watch dog (intruder deterrent), service dog for a disability, emotional support animal to mitigate mental illness, etc.<br/>
+					      		<a href="#" onclick='openInNewTab("https://www.reddit.com/r/dogs/comments/3bni35/breeds_looking_to_purchaserescue_our_first_dog/csnsz8l")'>Please read this post if you are looking for a watch or guard dog.</a>
+
+					      	</p>
+						    <textarea rows="1" cols="1" name="text"></textarea> 
+					    </div>
+						<div class="tab-pane" id="tab3">
+							<div class="num">3/30</div>
+							<p class="questionText">
+					    		What experience do you have owning dogs? How about training dogs? 
+					    	</p>
+					      	<p class="subtext">
+					      		Have you been the primary caregiver of a dog before? <br/>If so, what breed(s)? What is your experience with puppy or senior dog care?
+					      	</p>
+						    <textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab4">
+							<div class="num">4/30</div>
+							<p class="questionText">
+					    		Do you have other pets or are you planning on having other pets?
+					    	</p>
+					      	<p class="subtext">
+					      		If so, what breed/type, age, and sex are they?<br/>Please include cats and small animals.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+
+					    </div>
+						<div class="tab-pane" id="tab5">
+							<div class="num">5/30</div>
+							<p class="questionText">
+					    		Do you have children or are you planning on having children?<br/>Do you often have children as visitors, such as nieces, nephews, cousins, or friends' children?
+					    	</p>
+					      	<p class="subtext">
+					      		If you have children or visiting children, what are their ages? If you're planning on kids, when?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab6">
+					      	<div class="num">6/30</div>
+					      	<p class="questionText">
+					    		Do you rent or will you be renting in the future?<br/>If so, what breed or weight restrictions are on your lease?
+					    	</p>
+					      	<p class="subtext">
+					      		What type of building do you rent (condo, apartment, high-rise apartment, townhome, single-family home, etc)?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab7">
+					    	<div class="num">7/30</div>
+					    	<p class="questionText">
+					    		Who lives in your household and who will be responsible for taking care of the dog?
+					    	</p>
+					      	<p class="subtext">
+					      		How do the other members of the household feel about having a new dog?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab8">
+							<div class="num">8/30</div>
+							<p class="questionText">
+					    		How often do you have visitors to your home?
+					    	</p>
+					      	<p class="subtext">
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab9">
+							<div class="num">9/30</div>
+							<p class="questionText">
+					    		Do you have a preference for rescuing a dog vs. going through a knowledgeable and reputable breeder? 
+					    	</p>
+					      	<p class="subtext">
+					      		Please consider adopting a dog from a rescue or shelter. Look for a rescue organization that fosters their animals to get a more reliable assessment of a rescue dog’s behavior and needs.<br/>If you need a dog with very predictable health and behavior, you must go through a good breeder—not craigslist, not the newspaper, not Puppyfind or Kijiji, or anywhere else.<br/><a href="#" onclick='openInNewTab("https://www.reddit.com/r/dogs/wiki/i-dont-want-a-show-dog")'>Here is an introduction on why the quality of breeder is important</a>, and <a href="#" onclick='openInNewTab("http://ownresponsibly.blogspot.com/2011/07/identifying-reputable-breeder.html")'>here is a list of questions that can help you find a good breeder.</a><br/>Feel free to search the subreddit or make your own post for more information.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab10">
+							<div class="num">10/30</div>
+							<p class="questionText">
+					    		Do you want a puppy, a young adult (1-3 years), an adult, or a senior? Why?
+					    	</p>
+					      	<p class="subtext">
+					      		<ul> 
+					      			<li>Puppy - huge time commitment required, adult personality/behavior unknown and impacted by early life experience but ultimately limited by genetics;</li> 
+					      			<li>Young adult - youthful exuberance and energy without the puppy headache, adult temperament/behavioral traits mostly apparent but fairly moldable by new life experiences;</li> 
+					      			<li> Adult - personality fully formed but slightly moldable by new life experiences, steady energy requirements; senior- old, lazy, needs cuddles, grateful to be adopted.</li>
+					      		</ul>
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+
+					    <div class="tab-pane" id="tab11">
+					      	<div class="num">11/30</div>
+					      	<p class="questionText">
+					    		What size dog are you looking for?
+					    	</p>
+					      	<p class="subtext">
+					      		Give the approximate height of the dog at the shoulders or mention breeds that are around the size you want. Also indicate if there are sizes you really don't want. <br/>
+					      		<a href="#" onclick='openInNewTab("http://i.imgur.com/vnz3usJ.jpg")'>Here is a size chart for your convenience.</a>
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab12">
+					    	<div class="num">12/30</div>
+					    	<p class="questionText">
+					    		How much barking is too much barking?
+					    	</p>
+					      	<p class="subtext">
+					      		Are you put-off by other, quieter vocalizations like grumbling or mumbling?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab13">
+							<div class="num">13/30</div>
+							<p class="questionText">
+					    		How much regular brushing are you willing to do?
+					    	</p>
+					      	<p class="subtext">
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab14">
+							<div class="num">14/30</div>
+							<p class="questionText">
+					    		How much shedding do you think you can handle?
+					    	</p>
+					      	<p class="subtext">
+					      		Some breeds of dogs shed more than others. Some breeds don't shed much, but require trimming or other coat maintenance instead.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab15">
+							<div class="num">15/30</div>
+							<p class="questionText">
+					    		Are you open to trimming your dog's hair, cleaning ears, clipping nails, or doing other grooming at home?<br/>If not, would you be willing to pay a professional to do it regularly?
+					    	</p>
+					      	<p class="subtext">
+					      		Dogs that don't shed require regular trimming and other grooming to maintain their coat. All dogs need nail maintenance. Many breeds need regular ear cleaning.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab16">
+					      	<div class="num">16/30</div>
+					      	<p class="questionText">
+					    		How do you feel about slobber? What about farts?
+					    	</p>
+					      	<p class="subtext">
+					      		All dogs drool, but some breeds leave a slime trail. Others tend to be abnormally gassy.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab17">
+					    	<div class="num">17/30</div>
+					    	<p class="questionText">
+					    		How eager-to-please or independent do you want your dog to be?
+					    	</p>
+					      	<p class="subtext">
+					      		Eagerness to please is known as being "biddable". <br/> Do you want your dog to listen to you because that's what dogs should do, or do you not mind if your dog ignores you unless you have something they want? Are you okay with something in between? <br/> Independent dogs require more motivation and effort to train and are less likely to look to you for help, giving the impression of being stubborn.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab18">
+							<div class="num">18/30</div>
+							<p class="questionText">
+					    		What sorts of training do you want your adult dog to have?
+					    	</p>
+					      	<p class="subtext">
+					      		Being able to learn a lot of commands and tricks is known as being "trainable".<br/>Think about the level of training your adult needs to have, as well. Aspirations beyond "sit", "stay", and "down" will be easier for some breeds than others. Some breeds struggle to get the basics.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab19">
+							<div class="num">19/30</div>
+							<p class="questionText">
+					    		Is there any behavior you can’t accommodate?
+					    	</p>
+					      	<p class="subtext">
+					      		For example, aggression towards other dogs, stealing/carrying household objects, mouthiness, unbreakable focus on small animals, barking at the door, escaping enclosures, etc.<br/>Many undesirable behaviors are related to training and habits, but some are breed-related.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab20">
+							<div class="num">20/30</div>
+							<p class="questionText">
+					    		How important is being able to let your dog roam off-leash in an unfenced area?
+					    	</p>
+					      	<p class="subtext">
+					      		Be aware of your area's leash laws and follow them.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+
+					    <div class="tab-pane" id="tab21">
+					      	<div class="num">21/30</div>
+					      	<p class="questionText">
+					    		How long can you exercise your dog each day, on average? What kinds of exercise are you planning to give your dog regularly?
+					    	</p>
+					      	<p class="subtext">
+					      		For example, biking in the neighborhood for an hour, several 20 minute leisurely neighborhood strolls, two-hour long visits to the dog park, 45 minutes of fetch in a fenced yard, regular hiking or swimming, doggy day care two days a week, etc.<br/>For jogging or running, please include pace, distance, and terrain covered.<br/>Take note that puppies can’t start regularly biking/running/jogging until they’re over a year old, so think of ways to exercise your dog for the first year or two, as well.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab22">
+					    	<div class="num">22/30</div>
+					    	<p class="questionText">
+					    		How long do you have to devote to mental stimulation each day?
+					    	</p>
+					      	<p class="subtext">
+					      		Mental stimulation is necessary for many working breeds and encompasses training of all kinds, from basic obedience training at home to training for a serious competitive sport, or even training for a real job.<br/>Games and puzzles where you actively engage the dog count as mental stimulation too.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab23">
+							<div class="num">23/30</div>
+							<p class="questionText">
+					    		Where will the dog be kept when alone and where will the dog sleep?
+					    	</p>
+					      	<p class="subtext">
+					      		Will the dog be crated, kept in a single room, left to roam the house, kept outside in a yard, in a dog run, or somewhere else?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab24">
+							<div class="num">24/30</div>
+							<p class="questionText">
+					    		How often and for how long will the dog be left alone?
+					    	</p>
+					      	<p class="subtext">
+					      		On an average day, how long will nobody be in the house?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab25">
+							<div class="num">25/30</div>
+							<p class="questionText">
+					    		If needed, could you hire a dog walker, pay for doggy day care, or come home during lunch to take care of your dog?
+					    	</p>
+					      	<p class="subtext">
+					      		Puppies need to be let out every few hours and your schedule should be flexible for the first few months of owning a new puppy.<br/>Adults can be left alone all day, but more than 9-10 hours is pushing it.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab26">
+					      	<div class="num">26/30</div>
+					      	<p class="questionText">
+					    		What is the general location in which you live?
+					    	</p>
+					      	<p class="subtext">
+					      		You don't need to answer, but it will help us determine what breeds are legally allowed in your area. (We'll assume you're American with no restrictions otherwise)
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+					    <div class="tab-pane" id="tab27">
+					    	<div class="num">27/30</div>
+					    	<p class="questionText">
+					    		What is the average temperature of a typical summer day where you live? A typical winter day?
+					    	</p>
+					      	<p class="subtext">
+					      		Please indicate Celsius or Fahrenheit. Also include the climate of places you may move to, if applicable.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab28">
+							<div class="num">28/30</div>
+							<p class="questionText">
+					    		On a scale of 1 to 10, how prepared are you to care for a dog and prioritize its well-being over your career, entertainment, or other life choices for the next 12 or more years?
+					    	</p>
+					      	<p class="subtext">
+					      		Do you have an emergency plan for the dog in case something were to happen to you or your living situation?
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab29">
+							<div class="num">29/30</div>
+							<p class="questionText">
+					    		Are you aware of the costs associated with dog ownership on an average annual basis? Have you budgeted for additional emergency veterinary care and/or pet insurance? 
+					    	</p>
+					      	<p class="subtext">
+					      		Dogs are <b>expensive</b>.<br/>If you can’t afford the maintenance costs of a dog including routine vet care, emergency vet care, and medications, then you can’t afford a new dog.<br/>Please fully budget for your new pet. The purchase price of the animal is a drop in the bucket compared to the lifetime costs associated with caring for that animal.
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text"></textarea>
+					    </div>
+						<div class="tab-pane" id="tab30">
+							<div class="num">30/30</div>
+							<p>
+								All done!
+					      	</p>
+					      	<p id="counter">
+					      	</p>
+					      	<p class="subtext">
+					      		<a id="#button">Click here</a> to post a new topic, or copy the formatted response below;
+					      	</p>
+					      	<textarea rows="1" cols="1" name="text" id="result"></textarea>
+
+					    </div>
+						<ul class="pager wizard">
+							<li class="previous first" style="display:none;"><a href="#">First</a></li>
+							<li class="previous"><a href="#">Previous</a></li>
+							<li class="next last" style="display:none;"><a href="#">Last</a></li>
+						  	<li class="next"><a href="#">Next</a></li>
+						</ul>
+					<div id="bar" class="progress">
+                      <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                    </div>
+					</div>
+				</div>
+			</section>
+	</div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./jquery.bootstrap.wizard.js"></script>
+	<script src="./urlencode.js"></script>
+	<script>
+	var redditUrl = '';
+	$(document).ready(function() {
+		
+	
+	  	$('#rootwizard').bootstrapWizard({onNext: function(tab, navigation, index) {
+	  			var resString = "";
+	  			var $total = navigation.find('li').length;
+	  			var $missedCount = 0;
+				if(index==29) {
+					// grab all previous responses and format them
+					if(!$('#tab' + index).find('textarea').val()) {
+						// alert('You must enter your name');
+						$('#tab' + index).find('textarea').focus();
+						return false;
+					} else {
+						
+						for (var i = 1; i < $total; i++) {
+							console.log("Processing answer " + i + " of " + $total-1);
+							if($('#tab' + i).find('textarea').val()) {
+
+								resString = resString + "* " + $.trim( $('#tab' + i ).find(".questionText").text()) +  "  \n\n" + $.trim($('#tab' + i).find('textarea').val()) + "\n\n"; //grab question and answer, strip annoying tabs and shit, add to string
+
+
+							} else {
+								$missedCount++;
+								//resString = resString + "-<br/>";
+							}
+						}
+					}
+				}
+
+				$( "#tab" + $total).find('textarea').text($.trim(resString));
+				$( "#tab" + $total).find('#counter').text( (($total -1) - $missedCount) + " of " + ($total-1) + " questions" );
+
+				var uecResult 	= urlencode($.trim(resString)); //parse the result for posting to Reddit
+				var uecTitle 	= urlencode('[BREEDS][AUTO] Help me pick a dog! (Breed questionarre)');
+
+				redditUrl = 'https://www.reddit.com/r/dogs/submit?selftext=true&title=' + uecTitle + '&text=' + uecResult; //send hugelarge reddit url to the onclick thingy
+
+	
+
+				// Set the name for the next tab
+				//$('#tab3').html('Hello, ' + $('#tab2').find('textarea').val());
+
+			}, onTabShow: function(tab, navigation, index) {
+				var $total = navigation.find('li').length;
+				var $current = index+1;
+	  			var $missedCount = 0;
+
+				$( "#tab" + $total ).find(".subtext").click(function() { //grab the reddit url and send it to reddit...
+						openInNewTab(redditUrl)
+					});
+
+				for (var i = 1; i < $total; i++) {
+				if(!$('#tab' + i).find('textarea').val()) {
+					$missedCount++;
+					}
+				}
+
+				var $percent = ( ($total-$missedCount) /$total) * 100;
+				//var $percent = ($current/$total) * 100;
+
+
+				$('#rootwizard .progress-bar').css({width:$percent+'%'});
+
+			}, onTabClick: function(tab, navigation, index) { //stop people from jumping to the end with the tab buttons
+				var $total = navigation.find('li').length;
+				//console.log(index + " " + tab);
+				//if(index==$total) {
+					//alert('on tab click disabled');
+					return false;
+				//}
+			}});
+		//window.prettyPrint && prettyPrint()
+	});
+
+	function openInNewTab(url) { //open shit in a new tab so responses aren't removed
+    	$("<a>").attr("href", url).attr("target", "_blank")[0].click();
+	}
+	</script>
   </body>
 </html>

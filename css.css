@@ -1,0 +1,124 @@
+body {
+	background:#c0c0c0;
+}
+
+div#wrapper {
+	margin-left: auto;
+    margin-right: auto;
+    min-width: 50%;
+    max-width: 80%;
+    /*min-height:100;*/
+    background: #fff;
+}
+
+.nav>li>a {
+	padding:3px;
+	font-size: 10px;
+}
+
+.navbar {
+	margin-bottom:0px;
+	min-height:30px;
+}
+
+.tab-pane {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 300px;
+}
+
+
+.container {
+	width:970px;
+}
+
+
+.container#tabsContainer {
+	width:90% !important;
+	margin-right:auto;
+	margin-left: auto;
+
+}
+
+ul.nav.nav-pills {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+}
+
+
+
+.next>a { /*make Next button more easily noticed*/
+    background-color: #428bca !important;
+    color: #fff !important;
+}
+
+
+
+/* main area*/
+
+
+p {
+	font-weight:bold;
+	font-size:14pt;
+}
+
+p.subtext {
+    margin-top: 0px;
+    font-weight:normal;
+    color: rgb(129, 129, 129);
+    font-size: 12px;
+}
+#counter {
+	font-size: 8px;
+	font-weight:normal;
+}
+
+.tab-pane ul {
+    color: rgb(129, 129, 129);
+    font-size: 12px;
+    margin-left: 40px
+}
+
+.num {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    color:#369;
+    visibility: hidden; /* should we even display these...? looks kinda 'busy'... can't decide */
+}
+
+.tab-pane p {
+	margin-left:40px;
+}
+
+textarea {
+
+  width: 80%;
+  height: 150px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  margin-top:60px;
+  transition: all 0.5s ease;
+}
+
+textarea:focus {
+    height: 150px;
+    transition: all 0.25s ease;
+    border-radius:0px;
+}
+
+a:hover {
+	color:#369;
+	transition: all 0.5s ease;
+}
+
+#button {
+	font-weight: bold;
+	font-size: 13px;
+}
