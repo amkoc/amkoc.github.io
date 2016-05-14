@@ -76,11 +76,7 @@ p.subtext {
 	font-weight:normal;
 }
 
-.tab-pane ul {
-    color: rgb(129, 129, 129);
-    font-size: 12px;
-    margin-left: 40px
-}
+
 
 .num {
     margin-left: auto;
@@ -91,7 +87,13 @@ p.subtext {
 }
 
 .tab-pane p {
-	margin-left:40px;
+	/*margin-left:40px;*/
+}
+
+.tab-pane ul {
+    color: rgb(129, 129, 129);
+    font-size: 12px;
+    margin-left: 10px
 }
 
 textarea {
