@@ -3,6 +3,9 @@ body {
 }
 
 div#wrapper {
+  box-shadow: 6px -5px 5px darkgrey;
+    margin-bottom: 8px;
+    margin-top: 8px;
 	margin-left: auto;
     margin-right: auto;
     min-width: 50%;
@@ -45,7 +48,7 @@ ul.nav.nav-pills {
     width: 56%;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 
@@ -62,7 +65,7 @@ ul.nav.nav-pills {
 
 p {
 	font-weight:bold;
-	font-size:14pt;
+	font-size:12pt;
 }
 
 p.subtext {
@@ -105,7 +108,7 @@ textarea {
   padding: 10px;
   display: block;
   margin: auto;
-  margin-top:30px;
+  margin-top:20px;
   transition: all 0.5s ease;
 }
 
@@ -123,4 +126,8 @@ a:hover {
 #button {
 	font-weight: bold;
 	font-size: 13px;
+}
+
+.question {
+  margin-top: 40px;
 }
