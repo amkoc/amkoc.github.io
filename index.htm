@@ -2,7 +2,7 @@
 <html>
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Question Wizard</title>
+    <title>Questionnaire</title>
     <!-- Bootstrap -->
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./prettify.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 
 			<section id="wizard">
 			  <div class="page-header">
-	            <h1>Question Wizard</h1>
+	            <h1>Questionnaire</h1>
 <!-- 	            <p class="subtext">
 	            	Answer the questions below, then press 'next'.
 	            </p> -->
@@ -38,22 +38,28 @@
 					<div class="tab-content"> <!-- Add questions here, for each question add a new tab above -->
 					    <div class="tab-pane" id="tab1">
 					    	<!-- misc tab -->
+							<div class="question">
 								<p class="questionText">
 						    		Are there any breeds you're already interested in? What attracts you to them?
 						    	</p>
 						      	<p class="subtext">
 						      		If not specific breeds, then what types of dogs are you interested in? Some examples of types include herding dogs, retrievers, small terriers, and more.
 						      	</p>
-							    <textarea rows="1" cols="1" name="text"></textarea>
+							    <textarea rows="1" cols="1" name="text" class="input"></textarea>
+							</div>
 						    <hr/>
+						    <div class="question">
+
 							    <p class="questionText">
 						    		What experience do you have owning dogs? How about training dogs? 
 						    	</p>
 						      	<p class="subtext">
 						      		Have you been the primary caregiver of a dog before? <br/>If so, what breed(s)? What is your experience with puppy or senior dog care?
 						      	</p>
-							    <textarea rows="1" cols="1" name="text"></textarea>
+							    <textarea rows="1" cols="1" name="text" class="input"></textarea>
+							</div>
 						    <hr/>
+						    <div class="question">
 						    	<p class="questionText">
 						    		What role is your dog expected to fill and how do you envision your dog fulfilling that role?
 						    	</p>
@@ -62,9 +68,12 @@
 						      		<a href="#" onclick='openInNewTab("https://www.reddit.com/r/dogs/comments/3bni35/breeds_looking_to_purchaserescue_our_first_dog/csnsz8l")'>Please read this post if you are looking for a watch or guard dog.</a>
 
 						      	</p>
-							    <textarea rows="1" cols="1" name="text"></textarea>
+							    <textarea rows="1" cols="1" name="text" class="input"></textarea>
+							</div>
 						    <hr/>
-						    <br/>
+						    <!-- <br/> -->
+							<div class="question topspace">
+
 							    <p class="questionText">
 						    		What size dog are you looking for?
 						    	</p>
@@ -72,8 +81,10 @@
 						      		Give the approximate height of the dog at the shoulders or mention breeds that are around the size you want. Also indicate if there are sizes you really don't want. <br/>
 						      		<a href="#" onclick='openInNewTab("http://i.imgur.com/vnz3usJ.jpg")'>Here is a size chart for your convenience.</a>
 						      	</p>
-						      	<textarea rows="1" cols="1" name="text"></textarea>
+						      	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+						    </div>
 						    <hr/>
+						    <div class="question">
 							    <p class="questionText">
 						    		Do you want a puppy, a young adult (1-3 years), an adult, or a senior? Why?
 						    	</p>
@@ -84,21 +95,69 @@
 						      			<li> Adult - personality fully formed but slightly moldable by new life experiences, steady energy requirements; senior- old, lazy, needs cuddles, grateful to be adopted.</li>
 						      		</ul>
 						      	</p>
-						      	<textarea rows="1" cols="1" name="text"></textarea>
+						      	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+						    </div>
 						    <hr/>
+						    <div class="question">
 							    <p class="questionText">
 						    		Do you have a preference for rescuing a dog vs. going through a knowledgeable and reputable breeder? 
 						    	</p>
 						      	<p class="subtext">
 						      		Please consider adopting a dog from a rescue or shelter. Look for a rescue organization that fosters their animals to get a more reliable assessment of a rescue dog’s behavior and needs.<br/>If you need a dog with very predictable health and behavior, you must go through a good breeder—not craigslist, not the newspaper, not Puppyfind or Kijiji, or anywhere else.<br/><a href="#" onclick='openInNewTab("https://www.reddit.com/r/dogs/wiki/i-dont-want-a-show-dog")'>Here is an introduction on why the quality of breeder is important</a>, and <a href="#" onclick='openInNewTab("http://ownresponsibly.blogspot.com/2011/07/identifying-reputable-breeder.html")'>here is a list of questions that can help you find a good breeder.</a><br/>Feel free to search the subreddit or make your own post for more information.
 						      	</p>
-						      	<textarea rows="1" cols="1" name="text"></textarea>
+						      	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+						    </div>
 					    </div>
 						<div class="tab-pane" id="tab2">
-						<!-- Maintinance/Upkeep -->
-							
+							<!-- Maintinance/Upkeep -->
+							<div class="question">
+								<p class="questionText">
+						    		Have you budgeted for your dog, including yearly care cost and additional emergency veterinary care and/or pet insurance? 
+						    	</p>
+						      	<p class="subtext">
+						      		Dogs are <b>expensive</b>.<br/>If you can’t afford the maintenance costs of a dog including routine vet care, emergency vet care, and medications, then you can’t afford a new dog.<br/>Please fully budget for your new pet. The purchase price of the animal is a drop in the bucket compared to the lifetime costs associated with caring for that animal.
+						      	</p>
+						      	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+						    </div>
+						    <hr/>
+						    <div class="question">
+						    	<p class="questionText">
+						    		On a scale of 1 to 10, how prepared are you to care for a dog and prioritize its well-being over your career, entertainment, or other life choices for the next 12 or more years?
+						    	</p>
+						    	<p class="subtext">
+						      		Do you have an emergency plan for the dog in case something were to happen to you or your living situation?
+						    	</p>
+						    	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+						    </div>
+						    <hr/>
+					    	<!-- <br/> -->
+					    	<div class="question">
+					    		<p class="questionText">
+						    		How much shedding do you think you can handle?
+						    	</p>
+						      	<p class="subtext">
+						      		Some breeds of dogs shed more than others. Some breeds don't shed much, but require trimming or other coat maintenance instead.
+						      	</p>
+						      	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+						    <hr/>
+							</div>
+							<div class="question">
+							</div>
+							<div class="question">
+							</div>
+							<div class="question">
+								<p class="questionText">
+						    		Are you open to trimming your dog's hair, cleaning ears, clipping nails, or doing other grooming at home?<br/>If not, would you be willing to pay a professional to do it regularly?
+						    	</p>
+						      	<p class="subtext">
+						      		Dogs that don't shed require regular trimming and other grooming to maintain their coat. All dogs need nail maintenance. Many breeds need regular ear cleaning.
+						      	</p>
+						      	<textarea rows="1" cols="1" name="text" class="input"></textarea>
+							</div>
 					    </div>
 					    <div class="tab-pane" id="tab3">
+					    	<div class="question">
+							</div>
 					    </div>
 					    <div class="tab-pane" id="tab4">
 					    </div>
@@ -114,7 +173,7 @@
 					      	<p class="subtext">
 					      		<a id="#button">Click here</a> to post a new topic, or copy the formatted response below;
 					      	</p>
-					      	<textarea rows="1" cols="1" name="text" id="result"></textarea>
+					      	<textarea rows="1" cols="1" name="text" class="input" id="result"></textarea>
 					    </div>
 				
 						<ul class="pager wizard">
